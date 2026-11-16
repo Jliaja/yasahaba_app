@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>KTP Scanner</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+
+<body>
+
+    <main class="container">
+
+        <h1>KTP Scanner</h1>
+
+        <p class="subtitle">
+            Upload banyak foto KTP sekaligus.
+            OCR berjalan di background.
+        </p>
+
+
+        <!-- UPLOAD -->
+
+        <div
+            id="dropZone"
+            class="drop-zone"
+        >
+
+            <div class="upload-icon">
+                +
+            </div>
+
+            <h2>
+                Pilih Foto KTP
+            </h2>
+
+            <p>
+                Bisa pilih banyak file sekaligus
+            </p>
+
+            <button
+                id="selectButton"
+                type="button"
+            >
+                Pilih File
+            </button>
+
+            <input
+                id="fileInput"
+                type="file"
+                accept="image/jpeg,image/png,image/webp"
+                multiple
+                hidden
+            >
+
+        </div>
+
+
+        <!-- FILE LIST -->
+
+        <div
+            id="fileList"
+            class="file-list"
+        ></div>
+
+
+        <!-- PROCESS -->
+
+        <button
+            id="processButton"
+            class="process-button"
+            disabled
+        >
+            Proses Semua
+        </button>
+
+
+        <!-- STATUS -->
+
+        <div
+            id="status"
+            class="status"
+        ></div>
+
+
+        <!-- RESULTS -->
+
+        <div
+            id="results"
+            class="results"
+        ></div>
+
+    </main>
+
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
